@@ -1,0 +1,194 @@
+.about__wrapper-container {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 0.7fr 0.9fr;
+  grid-template-areas:
+      "title title"
+      "icons text";
+    column-gap: 60px;
+    row-gap: 40px;
+}
+
+.about__title {
+  grid-area: title;
+  text-transform: none;
+  text-align: center;
+}
+
+.about__wrapper-text-block {
+  padding: 50px 0 0 0;
+  grid-area: text;
+}
+
+.about__text:not(:first-child) {
+  padding-top: 30px;
+}
+
+.about__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 15px;
+}
+
+.about__item {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 1;
+  display: grid;
+  grid-template-rows: auto 30px;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+
+  .about__icon {
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &.about__icon-html {
+      background-image: url('/public/icons/html.svg');
+    }
+    &.about__icon-css {
+      background-image: url('/public/icons/css.svg')
+    }
+    &.about__icon-sass {
+      background-image: url('/public/icons/sass.svg')
+    }
+    &.about__icon-js {
+      background-image: url('/public/icons/javascript.svg')
+    }
+    &.about__icon-react {
+      background-image: url('/public/icons/react.svg')
+    }
+    &.about__icon-jquery {
+      background-image: url('/public/icons/jQuery.svg')
+    }
+    &.about__icon-redux {
+      background-image: url('/public/icons/redux.svg');
+    }
+    &.about__icon-vite {
+      background-image: url('/public/icons/vite.svg');
+    }
+    &.about__icon-webpack {
+      background-image: url('/public/icons/webpack.svg');
+    }
+    &.about__icon-node {
+      background-image: url('/public/icons/nodejs.svg');
+    }
+    &.about__icon-figma {
+      background-image: url('/public/icons/figma.svg');
+    }
+    &.about__icon-photoshop {
+      background-image: url('/public/icons/adobe-photoshop.svg');
+    }
+    &.about__icon-indesign {
+      background-image: url('/public/icons/adobe-indesign.svg');
+    }
+    &.about__icon-illustrator {
+      background-image: url('/public/icons/adobe-illustrator.svg');
+    }
+    &.about__icon-lightroom {
+      background-image: url('/public/icons/adobe-lightroom.svg');
+    }
+    &.about__icon-tilda {
+      background-image: url('/public/icons/tilda_logo_white.svg');
+    }
+  }
+
+  .about__span {
+    font-size: 14px;
+    font-weight: 700;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1300px) {
+  .about__wrapper-text-block {
+    padding: 20px 0 0 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about__wrapper-text-block {
+    padding-top: 20px;
+  }
+
+  .about__wrapper-container {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "icons"
+      "text";
+    column-gap: 60px;
+    row-gap: 40px;
+  }
+
+  .about__list {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 950px) {
+  .about__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 30px;
+  }
+
+  .about__item {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .about__wrapper-text-block {
+    padding: 20px 50px;
+  }
+
+  .about__text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .about__list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 30px;
+  }
+
+  .about__wrapper-text-block {
+    padding: 20px 0;
+  }
+
+  .about__text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 390px) {
+  .about__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 30px;
+  }
+
+  .about__text {
+    font-size: 14px;
+  }
+}

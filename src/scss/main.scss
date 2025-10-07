@@ -1,0 +1,51 @@
+.main__container {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 1000px;
+  position: relative;
+}
+
+body.light-theme .main__container{
+  background-color: bisque;
+}
+
+body.dark-theme .main__container{
+  background-color: var(--dark-black);
+}
+
+a-waves {
+    --x: -5px;
+    --y: 50%;
+    background-image: url(photo.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;  
+    // margin: 20px 0;
+    padding: 0;
+    height: 750px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+a-waves:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: var(--yellow);
+    border-radius: 50%;
+    transform: translate3d(calc(var(--x) - 50%), calc(var(--y) - 50%), 0);
+    will-change: transform;
+    content: "";
+}
+a-waves svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+a-waves svg path {
+    fill: none;
+    stroke: var(--dark-bg-line);
+    stroke-width: 1px;
+}

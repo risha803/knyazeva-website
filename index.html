@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./src/style.scss">
+    <script defer type="module" src="./src/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>knyazeva-website</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="container header__container">
+          <div class="header__wrapper">
+            <button 
+              aria-label="Сменить тему" 
+              id="header__themeToggle" 
+              class="header__btn">
+            </button>
+            <h2 hidden>Меню</h2>
+            <nav class="header__navigation">
+              <ul class="header__navigation-list">
+                <li class="header__navigation-item">
+                  <a class="header__navigation-link" href="#about" aria-label="Ссылка на раздел обо мне.">Про себя</a>
+                </li>
+                <li class="header__navigation-item">
+                  <a class="header__navigation-link" href="#projects" aria-label="Ссылка на раздел проекты.">Проекты</a>
+                </li>
+                <li class="header__navigation-item">
+                  <a class="header__navigation-link" href="#experience" aria-label="Ссылка на раздел опыт работы.">Опыт</a>
+                </li>
+                <li class="header__navigation-item">
+                  <a class="header__navigation-link" href="#contacts" aria-label="Ссылка на раздел контакты.">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <div id="main-bg-theme" class="main__container main__waves">
+          <section class="start ">
+            <a-waves class="start__waves">
+              <svg class="js-svg"></svg>
+            </a-waves>
+            <div class="start__title-text-block">
+              <h1 class="visually-hidden">Frontend</h1>
+              <h2 class="start__title">С любовью и интересом к web-разработке</h2>
+            </div>
+            <a class="start__link-btn" href="#some-target">
+              <svg class="start__link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M1.51,6.079a1.492,1.492,0,0,1,1.06.44l7.673,7.672a2.5,2.5,0,0,0,3.536,0L21.44,6.529A1.5,1.5,0,1,1,23.561,8.65L15.9,16.312a5.505,5.505,0,0,1-7.778,0L.449,8.64A1.5,1.5,0,0,1,1.51,6.079Z"/>
+              </svg>
+            </a>
+          </section>
+          <section class="about">
+            <div class="container">
+              <div class="about__wrapper-container">
+                <h2 class="about__title">Про себя</h2>
+                <div class="about__icons-container">
+                  <ul class="about__list">
+                    <li class="about__item">
+                      <span class="about__icon about__icon-html"></span>
+                      <span class="about__span">HTML</span>
+                    </li>
+                    <li class="about__item">
+                      <span class="about__icon about__icon-css"></span>
+                      <span class="about__span">CSS</span>
+                    </li>
+                    <li class="about__item">
+                      <span class="about__icon about__icon-sass"></span>
+                      <span class="about__span">SASS</span>
+                    </li>
+                    <li class="about__item">
+                      <span class="about__icon about__icon-tilda"></span>
+                      <span class="about__span">TILDA</span>
+                    </li>
+                    <li class="about__item">
+                      <span class="about__icon about__icon-js"></span>
+                      <span class="about__span">JAVASCRIPT</span>
+                    </li>
+                    <li class="about__item">
+                      <span class="about__icon about__icon-react"></span>
+                      <span class="about__span">REACT</span>
+                    </li>
+                    <li class="about__item">
+                      <span class="about__icon about__icon-jquery"></span>
+                      <span class="about__span">JQUERY</span>
+                    </li>
+                    <li class="about__item">
+                      <span class="about__icon about__icon-redux"></span>
+                      <span class="about__span">REDUX</span>
+                    </li>
+                    <li class="about__item">
+                      <span class="about__icon about__icon-vite"></span>
+                      <span class="about__span">VITE</span>
+                    </li>
+                    <li class="about__item">
+                      <span class="about__icon about__icon-webpack"></span>
+                      <span class="about__span">WEBPACK</span>
+                    </li>
+                    <li class="about__item">
+                      <span class="about__icon about__icon-node"></span>
+                      <span class="about__span">NODE.JS</span>
+                    </li>
+                    <li class="about__item">
+                      <span class="about__icon about__icon-figma"></span>
+                      <span class="about__span">FIGMA</span>
+                    </li>
+                    <li class="about__item">
+                      <span class="about__icon about__icon-photoshop"></span>
+                      <span class="about__span">PHOTOSHOP</span>
+                    </li>
+                    <li class="about__item">
+                      <span class="about__icon about__icon-indesign"></span>
+                      <span class="about__span">INDESIGN</span>
+                    </li>
+                    <li class="about__item">
+                      <span class="about__icon about__icon-illustrator"></span>
+                      <span class="about__span">ILLUSTRATOR</span>
+                    </li>
+                    <li class="about__item">
+                      <span class="about__icon about__icon-lightroom"></span>
+                      <span class="about__span">LIGHTROOM</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="about__wrapper-text-block">
+                  <p class="about__text about__text-bold">Привет!<br> Я Ирина, начинающий frontend-разработчик, опытный графический дизайнер, иллюстратор и тех. фотограф в одном флаконе.</p>
+                  <p class="about__text about__text-bold">Как так вышло? Несколько лет назад я поняла, что хочу изучать, развиваться — именно в сфере IT-разработки. Тем более, я могу совместить свой огромный опыт визуальной коммуникации с web и созданием удобных интерфейсов.</p>
+                  <p class="about__text about__text-bold">Я мечтаю стать fullstack-разработчиком и знаю, что до этого ещё пахать и пахать. Но я целеустремлённый человек и люблю добиваться результатов.</p>
+                  <p class="about__text"></p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <footer class="footer"></footer>
+    </div>
+  </body>
+</html>

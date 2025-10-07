@@ -1,0 +1,38 @@
+body.light-theme {
+  background-color: var(--white);
+  color: black;
+}
+
+body.dark-theme {
+  background-color: var(--dark-black);
+  color: white;
+}
+
+body.light-theme .header__navigation-link,
+body.dark-theme .start__link-btn {
+  color: var(--light-black);
+}
+
+body.dark-theme .header__navigation-link,
+body.dark-theme .start__link-btn {
+  color: var(--dark-link);
+}
+
+body.dark-theme .header__navigation-link:focus,
+body.dark-theme .start__link-btn:focus {
+  color: var(--yellow);
+  transition: 0.5s;
+}
+
+body.dark-theme .header__navigation-link:hover,
+body.dark-theme .start__link-btn:hover {
+  color: var(--yellow);
+  transition: fill 0.3s ease, filter 0.3s ease;
+}
+
+body.dark-theme .header__navigation-link:active,
+body.dark-theme .start__link-btn:active {
+  color: var(--yellow);
+  transition: 0.5s;
+}
+
