@@ -48,9 +48,10 @@
 
 .start__link-btn {
   position: absolute;
-  bottom: -20px;
+  bottom: -40px;
   left: 50%;
   display: flex;
+  transform: translate(-50%, -50%);
   flex-direction: column;
   justify-content: center;
   align-items: center;

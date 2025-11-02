@@ -108,6 +108,10 @@
     line-height: 30px;
     text-align: center;
   }
+
+  .about__text {
+    text-transform: none;
+  }
 }
 
 @media (max-width: 1300px) {

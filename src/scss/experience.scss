@@ -1,0 +1,42 @@
+.experience {
+  padding: 50px 0;
+}
+
+.experience__date {
+  font-weight: 900;
+  line-height: normal;
+  font-size: 42px;
+  color: var(--light-green);
+}
+
+.experience__list {
+  max-width: 1180px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  column-gap: 50px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.experience__container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.experience__profession {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.experience__work-list {
+  max-width: 950px;
+}
+
+.experience__freelance-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+}
+

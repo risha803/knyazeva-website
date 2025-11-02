@@ -68,10 +68,6 @@ button {
     z-index: 1000;
 } */
 
-#about {
-  text-transform: uppercase;
-}
-
 h2 {
   font-weight: 700;
   font-size: 40px;
@@ -101,6 +97,7 @@ fieldset {
   padding: 0;
   border:0 none;
 }
+
 
 @media (max-width: 1200px) {
   .container {
