@@ -6,24 +6,25 @@
 }
 
 .project__container {
-  max-width: 1180px;
+  max-width: 1300px;
   margin: 0 auto;
   justify-content: center;
+  padding: 0 60px;
 }
 
 .project__list {
-  max-width: 1180px;
+  max-width: 1300px;
   display: grid;
   justify-content: center;
-  grid-template-columns: minmax(443px, 580px) minmax(443px, 580px);
-  grid-template-rows: auto;
-  column-gap: 20px;
-  row-gap: 20px;
+  grid-template-columns: minmax(280px, 630px) minmax(280px, 630px);
+  grid-template-rows: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 40px;
   margin-top: 40px;
 }
 
 .project__item {
-  min-height: 349px;
+  min-height: 350px;
   width: 100%;
   position: relative;
 }
@@ -53,10 +54,67 @@
 .project__item-tablo {
   background-image: url('/public/bus.jpg');
   background-size: cover;
+  background-color: #949494;
 }
 
 .project__item-cat {
   background: linear-gradient(rgb(104 183 56 / 0.5),
       rgb(104 183 56 / 0.85)), url('/public/cat-photo.jpg') no-repeat;
   background-size: cover;
+  width: 100%;
+}
+
+.project__item-github {
+  background-color: #0C0C12;
+  background-image: url('/public/icons/github-mark.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@media (max-width: 1100px) {
+  .project__link {
+    font-size: 36px;
+  }
+
+  .project__item {
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 750px) {
+  .project__container {
+    padding: 0 30px;
+  }
+
+  .project__link {
+    font-size: 24px;
+  }
+
+  .project__item {
+    min-height: 220px;
+  }
+
+  .project__list {
+    grid-template-columns: minmax(130px, 325px) minmax(130px, 325px);
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project__list {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .project__item {
+    max-height: 200px;
+  }
+
+  .project__link {
+    font-size: 30px;
+  }
 }
