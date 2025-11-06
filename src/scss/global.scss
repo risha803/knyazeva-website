@@ -98,6 +98,11 @@ fieldset {
   border:0 none;
 }
 
+textarea {
+  margin: 0;
+  padding: 0;
+  border:0 none;
+}
 
 @media (max-width: 1200px) {
   .container {

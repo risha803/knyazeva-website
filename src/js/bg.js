@@ -7,13 +7,13 @@ export const editBgColorsTheme = () => {
   items.forEach(item => {
     item.addEventListener('mouseenter', () => {
       if (item.classList.contains('project__item-go')) {
-        sectionProject.style.backgroundColor = '#8A2BE2';
+        sectionProject.style.backgroundColor = '#3c1e36';
       } else if (item.classList.contains('project__item-tablo')) {
-        sectionProject.style.backgroundColor = '#D3D3D3';
+        sectionProject.style.backgroundColor = '#808080';
       } else if (item.classList.contains('project__item-cat')) {
-        sectionProject.style.backgroundColor = '#7CFC00';
+        sectionProject.style.backgroundColor = '#4d6d3b';
       } else {
-        sectionProject.style.backgroundColor = '#2F4F4F';
+        sectionProject.style.backgroundColor = '#191921';
       }
     });
 

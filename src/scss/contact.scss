@@ -1,0 +1,36 @@
+.contact {
+  padding: 50px 0;
+}
+
+.contact__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  max-width: 610px;
+  margin: 0 auto;
+}
+
+.contact__text-padding {
+  padding-top: 40px;
+}
+
+.contact__form {
+  padding-top: 40px;
+  max-width: 610px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__input {
+  width: 100%;
+}
+.contact__textarea {
+  width: 100%;
+}
+.contact__btn-submit {
+  width: 25%;
+}

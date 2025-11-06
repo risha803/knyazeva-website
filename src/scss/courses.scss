@@ -1,20 +1,20 @@
-.experience {
+.courses {
   padding: 50px 0;
 }
 
-.experience__date {
+.courses__date {
   font-weight: 900;
   line-height: normal;
   font-size: 42px;
-  color: var(--light-green);
+  color: var(--dark-link);
 }
 
-.experience__list {
+.courses__list {
   display: flex;
   flex-direction: column;
 }
 
-.experience__item-year {
+.courses__item {
   max-width: 1300px;
   width: 100%;
   display: grid;
@@ -22,45 +22,32 @@
   column-gap: 50px;
   margin: 0 auto;
   margin-top: 40px;
-  padding-bottom: 30px;
-  border-bottom: 3px solid var(--light-green);
 }
 
-.experience__company {
-  color: var(--light-green);
+.courses__company {
+  color: var(--dark-link);
 }
 
-.experience__container {
+.courses__container {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 10px;
 }
 
-.experience__profession {
+.courses__profession {
   font-weight: 700;
   font-size: 24px;
 }
 
-.experience__work-list {
-  max-width: 950px;
-}
-
-.experience__freelance-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 15px;
-}
-
 @media (max-width: 1250px) {
-  .experience__item-year {
+  .courses__item {
     grid-template-columns: 1fr 3fr;
     column-gap: 30px;
   }
 }
 
 @media (max-width: 1000px) {
-  .experience__item-year {
+  .courses__item {
     grid-template-columns: 1fr;
     row-gap: 30px;
   }
@@ -69,4 +56,3 @@
 @media (max-width: 750px) {}
 
 @media (max-width: 450px) {}
-
