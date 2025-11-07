@@ -2,6 +2,7 @@ import './style.scss';
 import './js/waves.js';
 import { editBgColorsTheme } from './js/bg';
 import { initThemeToggle } from './modules/theme/theme.js';
+import { initContactForm } from './js/contactForm';
 
 import moonIcon from './img/moon-icon.svg?raw';
 import sunIcon from './img/sun-icon.svg?raw';
@@ -11,6 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
   updateThemeIcon();
   initThemeToggle(updateThemeIcon);
   editBgColorsTheme();
+
+  initContactForm();
 });
 
 function updateThemeIcon() {

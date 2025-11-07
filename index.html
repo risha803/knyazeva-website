@@ -276,12 +276,23 @@
             <div class="container">
               <div class="contact__wrapper">
                 <h2 class="contact__title">Контакты</h2>
-                <p class="contact__text contact__text-padding">Давайте сделаем что-то классное вместе! Оставьте сообщение, и я отвечу, как только отложу клавиатуру. &#128521;</p>
-                <form method="POST" class="contact__form">
-                  <input class="contact__input" type="text" name="name" placeholder="Ваше имя" required>
-                  <input class="contact__input" type="email" name="email" placeholder="Ваш Email" required>
-                  <textarea class="contact__textarea" name="message" rows="4" placeholder="Ваше сообщение..." required></textarea>
-                  <button class="contact__btn-submit" type="submit">Отправить 🚀</button>
+                <p class="contact__text contact__text-padding">Давайте сделаем что-то классное вместе!</p>
+                <p class="contact__text">Оставьте сообщение, и я отвечу, как только отложу клавиатуру. &#128521;</p>
+                <form method="POST" action="https://formspree.io/f/xjkpndwp" class="contact__form" novalidate>
+                  <input class="contact__input" type="text" name="name" placeholder="Имя" required minlength="2">
+                  <span class="error-message"></span>
+
+                  <input class="contact__input" type="email" name="email" placeholder="Email" required>
+                  <span class="error-message"></span>
+
+                  <textarea class="contact__textarea" name="message" rows="4" placeholder="Сообщение" required minlength="5"></textarea>
+                  <span class="error-message"></span>
+
+                  <button class="contact__btn-submit" type="submit">
+                    <i class="icon-send material-icons">send</i>
+                    <i class="icon-check material-icons">check</i>
+                    <span class="contact__btn-text">Отправить</span>
+                  </button>
                 </form>
               </div>
             </div>
