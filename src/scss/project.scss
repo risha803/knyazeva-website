@@ -1,32 +1,43 @@
 .project {
+  position: relative;
   padding: 50px 0;
   width: 100%;
-  margin: 0 auto;
-  transition: background-color 0.4s ease;
+  overflow: hidden;
+}
+
+.project::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--project-gradient, transparent), var(--project-bg, none);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(12px);
+  opacity: var(--project-opacity, 0);
+  transition: opacity 0.6s ease;
+  background: 0.6s ease;
+  z-index: 0;
 }
 
 .project__container {
-  max-width: 1300px;
-  margin: 0 auto;
-  justify-content: center;
-  padding: 0 60px;
+  position: relative;
+  z-index: 1;
 }
 
 .project__list {
-  max-width: 1300px;
   display: grid;
   justify-content: center;
-  grid-template-columns: minmax(280px, 630px) minmax(280px, 630px);
-  grid-template-rows: 1fr 1fr;
-  column-gap: 40px;
-  row-gap: 40px;
+  grid-template-columns: repeat(2, minmax(280px, 630px));
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px;
   margin-top: 40px;
 }
 
 .project__item {
+  position: relative;
   min-height: 350px;
   width: 100%;
-  position: relative;
   transition: transform 0.3s ease;
 }
 
@@ -42,31 +53,43 @@
   text-transform: uppercase;
   color: var(--white);
   font-size: 50px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 80px;
   text-align: center;
   width: 100%;
-  background-size: cover;
   height: 100%;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .project__item-go {
   background-image: url('/public/starwars.jpg');
-  background-size: contain;
+  background-size: cover;
 }
 
 .project__item-tablo {
-  background-image: url('/public/bus.jpg');
-  background-size: cover;
-  background-color: #949494;
+  position: relative;
+  overflow: hidden;
+  background: none;
 }
 
-.project__item-cat {
-  background: linear-gradient(rgb(104 183 56 / 0.5),
-      rgb(104 183 56 / 0.85)), url('/public/cat-photo.jpg') no-repeat;
-  background-size: cover;
-  width: 100%;
+.project__item-tablo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('/public/bus.jpg') center/cover no-repeat;
+  filter: blur(2px);
+  z-index: 0;
+}
+
+.project__item-tablo .project__link {
+  position: relative;
+  z-index: 1;
+}
+
+.project__item-cat { 
+  background: linear-gradient(rgb(104 183 56 / 0.5), rgb(104 183 56 / 0.85)), 
+  url('/public/cat-photo.jpg') no-repeat; 
+  background-size: cover; 
+  width: 100%; 
 }
 
 .project__item-github {

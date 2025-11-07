@@ -1,9 +1,76 @@
 .footer {
-  padding-top: 50px;
+  padding: 70px 0 25px 0;
+  background-color: #121424;
+  position: relative;
+  text-align: center;
+}
+
+.footer__btn {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--dark-link);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.footer__btn-icon {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+  transition: transform 0.3s ease;
+  transform-origin: center;
+  transform: rotate(180deg) translateY(0.5px);
+  display: block;
+}
+
+.footer__btn:hover {
+  background-color: #888;
+}
+
+.footer__btn:focus {
+  background-color: #888;
+}
+
+.footer__btn:active {
+  background-color: var(--blue);
+}
+
+.footer__btn:active .footer__btn-icon {
+  transform: translateY(3px);
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
 }
 
 .footer__image {
-  fill: var(--light-green);
+  fill: var(--dark-link);
   width: 40px;
-  height: auto;
+  height: 40px;
+  transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+.footer__image:hover {
+  fill: var(--light-blue);
+  transform: scale(1.1);
+}
+
+.footer__author {
+  color: #aaa;
+  font-size: 0.9rem;
 }
