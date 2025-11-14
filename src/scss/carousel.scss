@@ -31,6 +31,70 @@
   transform: scale(1.05);
 }
 
+.carousel__card:focus {
+  transform: scale(1.05);
+}
+
+.carousel__card-happy {
+  background-image: url('/public/slider/happy1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel__card-graphics {
+  background-image: url('/public/slider/graphics.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel__card-freeze {
+  background-image: url('/public/slider/freezelight.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel__card-museum {
+  background-image: url('/public/slider/museum.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel__card-cardlight {
+  background-image: url('/public/slider/postcard1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel__card-bw {
+  background-image: url('/public/slider/blackwhite.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel__card-pharmacy {
+  background-image: url('/public/slider/pharmacy.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel__card-rusty {
+  background-image: url('/public/slider/rustylake.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel__card-carddark {
+  background-image: url('/public/slider/postcard2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel__card-mockup {
+  background-image: url('/public/slider/mocups.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* Ключевая анимация */
 @keyframes scroll {
   from {
