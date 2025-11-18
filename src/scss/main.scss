@@ -5,8 +5,34 @@
   position: relative;
 }
 
-body.dark-theme .main__container{
+body .main__container{
   background-color: var(--dark-black);
+}
+
+body .main-go {
+  position: relative;
+  background-color: #18111A;
+  background-image: 
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('/public/starwars.jpg');
+  background-size: cover;
+  background-position: center;
+  flex: 1 0 auto;
+  background-repeat: no-repeat;  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(20px);
+    z-index: 0;
+  }
+  > * {
+    position: relative;
+    z-index: 1;
+  }
 }
 
 a-waves {
