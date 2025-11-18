@@ -1,0 +1,50 @@
+.guide {
+  padding: 50px 0;
+}
+
+.guide__list {
+  padding: 50px 0;
+  display: flex;
+  gap: 30px;
+  justify-content: space-evenly;
+  max-width: 1236px;
+  width: 100%;
+}
+
+.guide__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.guide__label {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.guide__img {
+  width: 100%;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+}
+
+.guide__img-1440 {
+  background-image: url('/public/go/1440px.jpg');
+}
+
+.guide__img-1024 {
+  background-image: url('/public/go/1024px.jpg');
+}
+
+.guide__img-768 {
+  background-image: url('/public/go/768px.jpg');
+}
+
+.guide__img-320 {
+  background-image: url('/public/go/320px.jpg');
+}

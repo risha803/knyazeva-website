@@ -20,7 +20,7 @@
 }
 
 .portfolio__tech-color {
-  color: #6D0885;
+  color: var(--dark-link);
   text-transform: uppercase;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .portfolio__subtitle {
-  color: #6D0885;
+  color: var(--dark-link);
   text-transform: uppercase;
   padding-top: 20px;
   font-size: 24px;
@@ -51,7 +51,7 @@
   line-height: normal;
   color: white;
   border-radius: 10px;
-  background-color: #460854;
+  background-color: var(--dark-bg-line);
   box-shadow: 0 5px 15px 0 rgb(59, 1, 65);
   transition: 0.5s;
   cursor: pointer;
@@ -59,7 +59,7 @@
 
 .portfolio__btn:hover {
   transform: translate(0,-3px);
-  box-shadow: 0 20px 40px 0 rgb(127, 8, 57);
+  box-shadow: 0 20px 40px 0 rgb(88, 71, 218);
 }
 
 .portfolio__btn:focus {
