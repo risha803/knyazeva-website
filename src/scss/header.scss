@@ -9,40 +9,75 @@
   justify-content: space-between;
   align-items: center;
   min-height: 80px;
+  justify-content: space-between;
 }
 
 .header__btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: auto;
+  min-width: 150px;
+  height: 40px;
+  padding: 0;
+
+  background: none;
+  cursor: pointer;
+
+  border-radius: 10px;
+  border: 2px solid var(--dark-bg-line);
+  color: var(--dark-bg-line);
+
+  transition: border-color 0.2s ease,
+              background-color 0.2s ease,
+              color 0.2s ease;
+
+  &:hover {
+    border-color: var(--blue);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var(--blue);
+  }
+
+  // при активе кнопка синяя и текст белый
+  &:active,
+  &.active {
+    background-color: var(--blue);
+    border-color: var(--blue);
+    color: #fff !important; // чтобы точно перебить svg и текст
+  }
+
+  // если есть svg — тоже красим в белый при active
+  &:active svg,
+  &.active svg {
+    fill: #fff;
+    stroke: #fff;
+  }
+}
+
+.header__btn-start {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  max-width: 150px;
+  height: 50px;
   padding: 0;
   border: none;
   background: none;
   cursor: pointer;
+  background-color: var(--dark-bg-line);
 }
 
-.header__btn:hover {
-  width: 43px;
-  height: auto;
-}
-
-.header__theme-icon {
-  width: 32px;
-  height: 32px;
-  fill: var(--dark-bg-line);
-  transition: transform 0.3s ease, fill 0.3s ease;
-
-  &:hover {
-    transform: scale(1.1);
-    fill: var(--blue);
-  }
+.header__navigation {
+  display: flex;
+  justify-content: end;
 }
 
 .header__navigation-list {
   display: flex;
   flex-direction: row;
+  justify-content: end;
   gap: 40px;
   height: 100%;
   align-items: center;

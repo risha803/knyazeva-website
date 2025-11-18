@@ -8,9 +8,9 @@ body.dark-theme {
   color: white;
 }
 
-body.light-theme .header__navigation-link,
+
 body.dark-theme .start__link-btn {
-  color: var(--light-black);
+  color: var(--dark-bg-line);
 }
 
 body.dark-theme .header__navigation-link,
@@ -20,7 +20,7 @@ body.dark-theme .start__link-btn {
 
 body.dark-theme .header__navigation-link:focus,
 body.dark-theme .start__link-btn:focus {
-  color: var(--yellow);
+  color: var(--dark-bg-line);
   transition: 0.5s;
 }
 
@@ -32,7 +32,6 @@ body.dark-theme .start__link-btn:hover {
 
 body.dark-theme .header__navigation-link:active,
 body.dark-theme .start__link-btn:active {
-  color: var(--yellow);
+  color: var(--blue);
   transition: 0.5s;
 }
-

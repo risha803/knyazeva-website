@@ -5,10 +5,6 @@
   position: relative;
 }
 
-body.light-theme .main__container{
-  background-color: bisque;
-}
-
 body.dark-theme .main__container{
   background-color: var(--dark-black);
 }

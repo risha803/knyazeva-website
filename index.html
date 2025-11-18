@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="/vite.svg">
     <link rel="stylesheet" href="./normalize.css">
-    <link rel="stylesheet" href="./src/style.scss">
-    <script type="module" src="./src/main.js"></script>
+    <script type="module" src="/src/main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Frontend-разработчик и графический дизайнер — проекты, навыки и опыт работы.">
     <meta name="keywords" content="frontend, web, html, css, javascript, react, sass, node.js, дизайн, developer, верстальщик, разработчик, фронтенд">
@@ -16,13 +15,11 @@
       <header class="header" id="start">
         <div class="container header__container">
           <div class="header__wrapper">
-            <button 
-              aria-label="Сменить тему" 
-              id="header__themeToggle" 
-              class="header__btn"
-              aria-pressed="false"
-              aria-live="polite">
-            </button>
+            <a href="#footer"
+              aria-label="Перейти вниз" 
+              class="header__btn header__navigation-link">
+              Перейти вниз
+            </a>
             <h2 hidden>Меню</h2>
             <nav class="header__navigation" aria-label="Главное меню">
               <ul class="header__navigation-list">
@@ -79,8 +76,8 @@
                       <span class="about__span">SASS</span>
                     </li>
                     <li class="about__item">
-                      <span class="about__icon about__icon-tilda"></span>
-                      <span class="about__span">TILDA</span>
+                      <span class="about__icon about__icon-taillwind"></span>
+                      <span class="about__span">tailwindcss</span>
                     </li>
                     <li class="about__item">
                       <span class="about__icon about__icon-js"></span>
@@ -146,13 +143,13 @@
               <h2 class="project__title">Проекты</h2>
               <ul class="project__list">
                 <li class="project__item project__item-go">
-                  <a href="https://risha803.github.io/Go-shop-online/" class="project__link" aria-label="Открыть проект Go пространство в новой вкладке">Go пространство</a>
+                  <a href="/src/pages/go.html" class="project__link" aria-label="Открыть проект Go пространство в новой вкладке">Go пространство</a>
                 </li>
                 <li class="project__item project__item-tablo">
-                  <a href="https://online-scoreboard.onrender.com/" class="project__link" aria-label="Открыть проект расписание автобусов в новой вкладке">bus shedule</a>
+                  <a href="/src/pages/bus.html" class="project__link" aria-label="Открыть проект расписание автобусов в новой вкладке">bus shedule</a>
                 </li>
                 <li class="project__item project__item-cat">
-                  <a href="https://risha661.github.io/2288933-cat-energy-28/" class="project__link" aria-label="Открыть проект cat energy в новой вкладке">Cat energy</a>
+                  <a href="/src/pages/cat-energy.html" class="project__link" aria-label="Открыть проект cat energy в новой вкладке">Cat energy</a>
                 </li>
                 <li class="project__item project__item-github">
                   <a href="https://github.com/risha803" class="project__link" aria-label="Открыть github пространство в новой вкладке">Github</a>
@@ -281,7 +278,7 @@
                 <h2 class="contact__title">Контакты</h2>
                 <p class="contact__text contact__text-padding">Давайте сделаем что-то классное вместе!</p>
                 <p class="contact__text">Оставьте сообщение, и я свяжусь с вами в ближайшее время. 😊</p>
-                <form method="POST" action="https://formspree.io/f/xjkpndwp" class="contact__form" novalidate>
+                <form method="POST" action="https://formspree.io/f/xjkpndwp" class="contact__form">
                   <input class="contact__input" type="text" name="name" placeholder="Имя" required minlength="2">
                   <span class="error-message"></span>
 
@@ -302,7 +299,7 @@
           </section>
         </div>
       </main>
-      <footer class="footer">
+      <footer class="footer" id="footer">
         <div class="container">
           <a class="footer__btn" href="#start" aria-label="Наверх">
             <svg aria-hidden="true" class="footer__btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -327,7 +324,7 @@
               <li>
                 <a href="tel:+79261561119"  target="_blank" aria-label="Телефон">
                   <svg aria-hidden="true" fill="currentColor" class="footer__image footer__image-phone" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    width="485.213px" height="485.212px" viewBox="0 0 485.213 485.212" style="enable-background:new 0 0 485.213 485.212;"
+                    viewBox="0 0 485.213 485.212" style="enable-background:new 0 0 485.213 485.212;"
                     xml:space="preserve">
                     <g>
                     <path d="M242.607,0C108.629,0,0.001,108.628,0.001,242.606c0,133.976,108.628,242.606,242.606,242.606

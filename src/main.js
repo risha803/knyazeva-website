@@ -9,19 +9,19 @@ import sunIcon from './img/sun-icon.svg?raw';
 
 document.addEventListener('DOMContentLoaded', () => {
   document.body.classList.add('dark-theme');
-  updateThemeIcon();
+  // updateThemeIcon();
   initThemeToggle(updateThemeIcon);
   editBgColorsTheme();
 
   initContactForm();
 });
 
-function updateThemeIcon() {
-  const isDark = document.body.classList.contains('dark-theme');
-  const toggleBtn = document.querySelector('#header__themeToggle');
+// function updateThemeIcon() {
+//   const isDark = document.body.classList.contains('dark-theme');
+//   const toggleBtn = document.querySelector('#header__themeToggle');
 
-  if (!toggleBtn) return;
-  toggleBtn.innerHTML = isDark ? sunIcon : moonIcon;
-  const svg = toggleBtn.querySelector('svg');
-  if (svg) svg.classList.add('header__theme-icon');
-}
+//   if (!toggleBtn) return;
+//   toggleBtn.innerHTML = isDark ? sunIcon : moonIcon;
+//   const svg = toggleBtn.querySelector('svg');
+//   if (svg) svg.classList.add('header__theme-icon');
+// }

@@ -23,6 +23,9 @@
 }
 
 .footer__btn-icon {
+  display: block;
+  max-width: 30px !important;
+  max-height: 30px !important;
   width: 30px;
   height: 30px;
   fill: #fff;
@@ -59,9 +62,12 @@
 }
 
 .footer__image {
+  display: block;
   fill: var(--dark-link);
-  width: 40px;
-  height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   transition: fill 0.3s ease, transform 0.3s ease;
 }
 
