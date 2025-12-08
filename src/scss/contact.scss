@@ -25,7 +25,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
-  color: #aaa;
+  color: var(--light-grey);
 }
 .contact__text-padding {
   margin-top: 40px;
@@ -35,8 +35,8 @@
 .contact__textarea {
   width: 100%;
   border: none;
-  background-color: #252830;
-  color: #fff;
+  background-color: var(--grey-black);
+  color: var(--white);
   padding: 8px;
   box-sizing: border-box;
   font-size: 16px;
@@ -50,7 +50,7 @@
 .contact__btn-submit {
   width: 45%;
   background-color: var(--light-green);
-  color: #fff;
+  color: var(--white);
   border: none;
   outline: none;
   cursor: pointer;
@@ -102,7 +102,7 @@
   position: absolute;
   left: 0;
   top: 100%;
-  color: #ff8080;
+  color: var(--light-cora);
   font-size: 14px;
   height: 16px;
   line-height: 16px;
@@ -111,14 +111,14 @@
 
 .contact__input.invalid,
 .contact__textarea.invalid {
-  border: 1px solid #ff5b5b;
-  background-color: #322d3a;
+  border: 1px solid var(--coral);
+  background-color: var(--dark);
 }
 
 .contact__input.valid,
 .contact__textarea.valid {
-  border: 1px solid #4E3CC8;
-  background-color: #252830;
+  border: 1px solid var( --dark-violet);
+  background-color: var(--grey-black);
 }
 
 /* Анимация троеточия при загрузке */

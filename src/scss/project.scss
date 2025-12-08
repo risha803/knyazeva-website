@@ -93,7 +93,7 @@
 }
 
 .project__item-github {
-  background-color: #0C0C12;
+  background-color: var(--bg-github);
   background-image: url('/public/icons/github-mark.svg');
   background-repeat: no-repeat;
   background-position: center;

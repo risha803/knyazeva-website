@@ -11,7 +11,7 @@ body .main__container{
 
 body .main-go {
   position: relative;
-  background-color: #18111A;
+  background-color: var(--go-main-bg);
   background-image: 
     linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
     url('/public/starwars.jpg');

@@ -63,7 +63,7 @@
 }
 
 .portfolio__btn:focus {
-  background-color: #6D0885;
+  background-color: var(--active);
   outline: none;  
   background-position: right center;
 }

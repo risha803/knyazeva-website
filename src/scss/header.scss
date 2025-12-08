@@ -38,12 +38,12 @@
   &.active {
     background-color: var(--blue);
     border-color: var(--blue);
-    color: #fff !important;
+    color: var(--white) !important;
   }
   &:active svg,
   &.active svg {
-    fill: #fff;
-    stroke: #fff;
+    fill: var(--white);
+    stroke: var(--white);
   }
 }
 
@@ -63,22 +63,22 @@
               background-color 0.2s ease,
               color 0.2s ease;
   &:hover {
-    border-color: #460854;
+    border-color: var(--hover);
   }
   &:focus {
     outline: none;
-    border-color: #460854;
+    border-color: var(--hover);
   }
   &:active,
   &.active {
-    background-color: #6D0885;
-    border-color: #6D0885;
-    color: #fff !important;
+    background-color: var(--active);
+    border-color: var(--active);
+    color: var(--white) !important;
   }
   &:active svg,
   &.active svg {
-    fill: #fff;
-    stroke: #fff;
+    fill: var(--white);
+    stroke: var(--white);
   }
 }
 

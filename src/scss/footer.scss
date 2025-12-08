@@ -1,6 +1,6 @@
 .footer {
   padding: 70px 0 25px 0;
-  background-color: #121424;
+  background-color: var(--footer-bg);
   position: relative;
   text-align: center;
 }
@@ -28,7 +28,7 @@
   max-height: 30px !important;
   width: 30px;
   height: 30px;
-  fill: #fff;
+  fill: var(--white);
   transition: transform 0.3s ease;
   transform-origin: center;
   transform: rotate(180deg) translateY(0.5px);
@@ -36,11 +36,11 @@
 }
 
 .footer__btn:hover {
-  background-color: #888;
+  background-color: var( --footer-btn);
 }
 
 .footer__btn:focus {
-  background-color: #888;
+  background-color: var( --footer-btn);
 }
 
 .footer__btn:active {
@@ -77,6 +77,6 @@
 }
 
 .footer__author {
-  color: #aaa;
+  color: var(--light-grey);
   font-size: 0.9rem;
 }
