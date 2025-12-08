@@ -10,7 +10,8 @@
   },
   "devDependencies": {
     "sass": "^1.93.2",
-    "vite": "^7.1.7"
+    "vite": "^7.1.7",
+    "vite-plugin-imagemin": "^0.6.1"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
