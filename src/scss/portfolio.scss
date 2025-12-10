@@ -10,6 +10,10 @@
   margin: 0 auto;
 }
 
+.main-bus .portfolio {
+  padding-bottom: 50px;
+}
+
 .portfolio__title {
   font-size: 56px;
   font-weight: 900;
@@ -56,6 +60,12 @@
   border-radius: 10px;
   transition: 0.5s;
   cursor: pointer;
+}
+
+.portfolio__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .portfolio__btn-go {
