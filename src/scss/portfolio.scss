@@ -19,6 +19,10 @@
   color: var(--white);
 }
 
+.main-cat .guide__title {
+  color: var(--light-green);
+}
+
 .portfolio__tech-color {
   color: var(--dark-link);
   text-transform: uppercase;
@@ -74,6 +78,34 @@
 .portfolio__btn-go:active {
   background-color: var(--violet);
   background-position: right center;
+}
+
+.portfolio__btn-cat {
+  color: white;
+  background-color: var(--footer-btn);
+  box-shadow: 0 5px 15px 0 rgb(0, 114, 72);
+}
+
+.portfolio__btn-cat:hover {
+  transform: translate(0,-3px);
+  box-shadow: 0 20px 40px 0 rgb(0, 114, 72);
+}
+
+.portfolio__btn-cat:focus {
+  background-color: var(--light-green);
+  outline: none;  
+  background-position: right center;
+}
+
+.portfolio__btn-cat:active {
+  background-color: var(--light-green);
+  background-position: right center;
+}
+
+.main-cat .portfolio__tech-color,
+.main-cat .portfolio__subtitle,
+.main-cat .portfolio__tech-color {
+  color: var(--light-green);
 }
 
 @media (max-width: 1100px) {

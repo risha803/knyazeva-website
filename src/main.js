@@ -3,6 +3,7 @@ import './js/waves.js';
 import { editBgColorsTheme } from './js/bg';
 import { initThemeToggle } from './modules/theme/theme.js';
 import { initContactForm } from './js/contactForm';
+import { initModal } from './js/modal.js';
 
 import moonIcon from './img/moon-icon.svg?raw';
 import sunIcon from './img/sun-icon.svg?raw';
@@ -15,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   initFadeInOnScroll();
   initLazyLoadImages();
+  initModal();
 });
 
 window.addEventListener("load", () => {

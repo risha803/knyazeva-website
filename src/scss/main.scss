@@ -35,6 +35,29 @@ body .main-go {
   }
 }
 
+body .main-cat {
+  position: relative;
+  overflow: hidden;
+  background: #16162E;
+  flex: 1 0 auto;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(20px);
+    z-index: 0;
+  }
+
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
 a-waves {
     --x: -5px;
     --y: 50%;

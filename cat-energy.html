@@ -48,7 +48,62 @@
           </div>
         </div>
       </header>
-      <main class="main"></main>
+      <main class="main main-cat fade-in">
+        <div class="container main-container-go">
+          <section class="portfolio">
+            <div class="portfolio__container">
+              <h1 class="portfolio__title">Cat Energy</h1>
+              <p class="portfolio__tech"><strong class="portfolio__tech-color">Технологии:</strong> HTML5, CSS3 (Sass), JavaScript, Gulp.</p>
+
+              <h2 class="portfolio__subtitle">Описание</h2>
+              <p class="portfolio__text">
+                Cat Energy — многостраничный адаптивный сайт для сервиса подбора программ правильного питания для кошек. 
+                Проект реализован как учебный и демонстрирует полноценную верстку с продвинутой автоматизацией.
+              </p>
+
+              <h2 class="portfolio__subtitle">Особенности</h2>
+              <ul class="portfolio__list">
+                <li class="portfolio__list-item">&bull; Адаптивная верстка от 320px до 1440px: мобильная, планшетная и десктопная версии.</li>
+                <li class="portfolio__list-item">&bull; Разметка выполнена по методологии БЭМ с акцентом на семантику и кроссбраузерность.</li>
+                <li class="portfolio__list-item">&bull; Использование препроцессора Sass и модульной структуры стилей.</li>
+                <li class="portfolio__list-item">&bull; Автоматизация сборки на Gulp: минификация HTML, CSS, оптимизация изображений.</li>
+                <li class="portfolio__list-item">&bull; Поддержка ретиновой графики и автоматизированная подготовка изображений.</li>
+              </ul>
+
+              <a href="https://risha661.github.io/2288933-cat-energy-28/" target="_blank" rel="noopener noreferrer" class="portfolio__btn portfolio__btn-cat">Смотреть проект</a>
+            </div>
+          </section>
+          <section class="guide fade-in">
+            <div class="container">
+              <h2 class="guide__title">Макет проекта</h2>
+
+              <ul class="guide__list">
+
+                <li class="guide__item lazy">
+                  <span class="guide__label">Desktop</span>
+                  <div class="guide__img guide__img-desktop"></div>
+                </li>
+
+                <li class="guide__item lazy">
+                  <span class="guide__label">Program</span>
+                  <div class="guide__img guide__img-program"></div>
+                </li>
+
+                <li class="guide__item lazy">
+                  <span class="guide__label">Catalog</span>
+                  <div class="guide__img guide__img-catalog"></div>
+                </li>
+
+                <li class="guide__item lazy">
+                  <span class="guide__label">Styleguide</span>
+                  <div class="guide__img guide__img-style"></div>
+                </li>
+
+              </ul>
+            </div>
+        </section>
+        </div>
+      </main>
       <footer class="footer">
         <div class="container">
           <a class="footer__btn" href="#start" aria-label="Наверх">
@@ -130,5 +185,10 @@
         </div>
       </footer>
     </div>
+    <div class="modal" id="imgModal">
+    <div class="modal__content">
+      <img id="modalImg" alt="">
+    </div>
+  </div>
   </body>
 </html>
