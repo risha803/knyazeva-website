@@ -6,7 +6,7 @@
 }
 
 .portfolio {
-  padding: 50px 100px;
+  padding: 50px 100px 0;
   margin: 0 auto;
 }
 
@@ -49,26 +49,95 @@
   font-size: 22px;
   font-weight: 700;
   line-height: normal;
-  color: white;
   border-radius: 10px;
-  background-color: var(--dark-bg-line);
-  box-shadow: 0 5px 15px 0 rgb(59, 1, 65);
   transition: 0.5s;
   cursor: pointer;
 }
 
-.portfolio__btn:hover {
+.portfolio__btn-go {
+  color: white;
+  background-color: var(--dark-bg-line);
+  box-shadow: 0 5px 15px 0 rgb(59, 1, 65);
+}
+
+.portfolio__btn-go:hover {
   transform: translate(0,-3px);
   box-shadow: 0 20px 40px 0 rgb(88, 71, 218);
 }
 
-.portfolio__btn:focus {
+.portfolio__btn-go:focus {
   background-color: var(--active);
   outline: none;  
   background-position: right center;
 }
 
-.portfolio__btn:active {
+.portfolio__btn-go:active {
   background-color: var(--violet);
   background-position: right center;
+}
+
+@media (max-width: 1100px) {
+  .portfolio {
+    padding: 30px 0;
+    margin: 0 auto;
+  }
+
+  .portfolio__title {
+    font-size: 52px;
+  }
+
+  .portfolio__tech,
+  .portfolio__text,
+  .portfolio__subtitle,
+  .portfolio__list-item {
+    font-size: 20px;
+  }
+
+  .portfolio__tech {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 750px) {
+  .portfolio__title {
+    font-size: 42px;
+  }
+
+  .portfolio__tech,
+  .portfolio__text,
+  .portfolio__subtitle,
+  .portfolio__list-item {
+    font-size: 16px;
+  }
+
+  .portfolio__btn {
+    width: 200px;
+    height: 40px;
+    margin: 20px 0 0 0;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio__title {
+    font-size: 30px;
+  }
+
+  .portfolio__tech,
+  .portfolio__text,
+  .portfolio__subtitle,
+  .portfolio__list-item {
+    font-size: 14px;
+  }
+  .portfolio__tech {
+    padding-top: 20px;
+  }
+
+  .portfolio__btn {
+    width: 180px;
+    height: 30px;
+    margin: 15px 0 0 0;
+    font-size: 14px;
+    border-radius: 5px;
+  }
 }
