@@ -1,4 +1,5 @@
 import './style.scss';
+import './scss/normalize.css';
 import './js/waves.js';
 import { editBgColorsTheme } from './js/bg';
 import { initThemeToggle } from './modules/theme/theme.js';
